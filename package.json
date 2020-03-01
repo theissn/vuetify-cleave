@@ -13,10 +13,7 @@
     "build:lib": "vue-cli-service build --target lib --name VCleaveInput src/components/VCleaveInput.vue"
   },
   "dependencies": {
-    "cleave.js": "^1.5.4",
-    "core-js": "^3.6.4",
-    "vue": "^2.6.11",
-    "vuetify": "^2.2.11"
+    "cleave.js": "^1.5.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",
@@ -35,7 +32,10 @@
     "sass-loader": "^8.0.0",
     "vue-cli-plugin-vuetify": "~2.0.5",
     "vue-template-compiler": "^2.6.11",
-    "vuetify-loader": "^1.3.0"
+    "vuetify-loader": "^1.3.0",
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11",
+    "vuetify": "^2.2.11"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"

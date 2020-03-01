@@ -1,5 +1,7 @@
 # vuetify-cleave
 
+A simple wrapper for the v-text-field component from vuetify to use cleave.js
+
 # Demo
 
 https://vuetify-cleave.netlify.com/
