@@ -4,6 +4,7 @@
   "author": "Theis Nielsen <theissnielsen@gmail.com>",
   "license": "MIT",
   "main": "dist/VCleaveInput.common.js",
+  "homepage": "https://github.com/theissn/vuetify-cleave",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
