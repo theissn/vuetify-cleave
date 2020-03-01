@@ -6,7 +6,7 @@ A simple wrapper for the v-text-field component from vuetify to use cleave.js
 
 https://vuetify-cleave.netlify.com/
 
-![example](docs/example.png)
+![example](https://raw.githubusercontent.com/theissn/vuetify-cleave/master/docs/example.png)
 
 # Installation
 ```
