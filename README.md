@@ -1,29 +1,49 @@
 # vuetify-cleave
 
-## Project setup
+# Demo
+
+https://vuetify-cleave.netlify.com/
+
+# Installation
 ```
-yarn install
+# npm
+npm install vuetify-cleave
+
+# Yarn
+yarn add vuetify-cleave
 ```
 
-### Compiles and hot-reloads for development
+# Usage
+
+View all possible props on [vuetify's docs](https://vuetifyjs.com/en/components/text-fields#api)
+
 ```
-yarn serve
+<template>
+  <VCleaveInput
+    v-model="cardNumber"
+    :options="creditCard"
+    placeholder="Credit card"
+  />
+</template>
+<script>
+import VCleaveInput from "vuetify-cleave";
+
+export default {
+  name: 'App',
+  components: {
+    VCleaveInput
+  },
+  data() {
+    return {
+      cardNumber: null,
+      creditCard: {
+        creditCard: true,
+        delimiter: " "
+      },
+    };
+  }
+};
+</script>
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+For other uses see examples: https://github.com/theissn/vuetify-cleave/blob/master/src/App.vue
