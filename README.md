@@ -4,6 +4,8 @@
 
 https://vuetify-cleave.netlify.com/
 
+![example](docs/example.png)
+
 # Installation
 ```
 # npm
