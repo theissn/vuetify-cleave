@@ -1,12 +1,15 @@
 {
   "name": "vuetify-cleave",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.2.0",
+  "author": "Theis Nielsen <theissnielsen@gmail.com>",
+  "license": "MIT",
+  "main": "dist/VCleaveInput.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:lib": "vue-cli-service build --target lib --name VCleaveInput src/components/VCleaveInput.vue"
   },
   "dependencies": {
     "cleave.js": "^1.5.4",
@@ -41,5 +44,7 @@
       "vue-cli-service lint",
       "git add"
     ]
-  }
+  },
+  "unpkg": "dist/VCleaveInput.umd.min.js",
+  "jsdelivr": "dist/VCleaveInput.umd.min.js"
 }

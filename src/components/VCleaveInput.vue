@@ -2,15 +2,10 @@
 import Cleave from "cleave.js";
 
 export default {
-  props: {
-    options: {
-      type: Object,
-      default: null
-    }
-  },
+  props: ["value", "options"],
   data() {
     return {
-      value: null,
+      local: this.value,
       attrs: ["outlined", "rounded"]
     };
   },
@@ -25,7 +20,7 @@ export default {
   methods: {
     onValueChanged({ target }) {
       this.$nextTick(() => {
-        this.value = target.value;
+        this.local = target.value;
         this.$emit("input", target.rawValue);
       });
     }
@@ -34,5 +29,5 @@ export default {
 </script>
 
 <template>
-  <v-text-field v-model="value" v-bind="$attrs" />
+  <v-text-field v-model="local" v-bind="$attrs" />
 </template>
