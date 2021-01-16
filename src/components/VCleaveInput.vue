@@ -14,20 +14,20 @@ export default {
       ...this.options,
       onValueChanged: this.onValueChanged.bind(this)
     });
-
+    this.cleave.setRawValue(this.value);
+  },
+  beforeUpdate() {
     this.cleave.setRawValue(this.value);
   },
   methods: {
     onValueChanged({ target }) {
-      this.$nextTick(() => {
         this.local = target.value;
         this.$emit("input", target.rawValue);
-      });
     }
   }
 };
 </script>
 
 <template>
-  <v-text-field v-model="local" v-bind="$attrs" />
+  <v-text-field :value="local" v-bind="$attrs" />
 </template>
